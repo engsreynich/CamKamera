@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Professional Camera Shop - Premium cameras, lenses, and accessories from Canon, Nikon, Sony, Sigma, and Lumix. Best prices and expert service."
+    />
+    <meta
+      name="keywords"
+      content="camera shop, professional cameras, Canon, Nikon, Sony, Sigma, Lumix, camera lenses, photography equipment"
+    />
+    <meta name="author" content="ENG SREYNICH Camera Shop" />
+    <meta
+      property="og:title"
+      content="ENG SREYNICH Camera Shop - Professional Photography Equipment"
+    />
+    <meta
+      property="og:description"
+      content="Premium cameras, lenses, and accessories from top brands. Professional photography equipment at competitive prices."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./img/logo.png" />
+
+    <title>ENG SREYNICH Camera Shop - Professional Photography Equipment</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#007bff" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#home">
+          <img
+            src="./img/logo.png"
+            alt="Camera Shop Logo"
+            height="40"
+            class="me-2"
+          />
+          <span class="fw-bold text-primary">CamKamera</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Products
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#cameras">Cameras</a></li>
+                <li><a class="dropdown-item" href="#lenses">Lenses</a></li>
+                <li>
+                  <a class="dropdown-item" href="#accessories">Accessories</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#brands">Brands</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center">
+            <div class="search-container me-3">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search products..."
+                  id="searchInput"
+                />
+                <button
+                  class="btn btn-outline-primary"
+                  type="button"
+                  id="searchBtn"
+                >
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+            <button
+              class="btn btn-outline-primary position-relative me-2"
+              id="cartBtn"
+            >
+              <i class="fas fa-shopping-cart"></i>
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                id="cartCount"
+              >
+                0
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-lg-6">
+            <div class="hero-content">
+              <h1 class="display-4 fw-bold mb-4">
+                Professional
+                <span class="text-primary">Photography</span> Equipment
+              </h1>
+              <p class="lead mb-4">
+                Discover premium cameras, lenses, and accessories from the
+                world's leading brands. Capture your vision with
+                professional-grade equipment.
+              </p>
+              <div class="d-flex gap-3">
+                <a href="#products" class="btn btn-primary btn-lg">Shop Now</a>
+                <a href="#brands" class="btn btn-outline-primary btn-lg"
+                  >View Brands</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image">
+              <img
+                src="./img/background.jpg"
+                alt="Professional Camera"
+                class="img-fluid rounded-3 shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Brands -->
+    <section id="brands" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold">Premium Brands</h2>
+          <p class="lead">
+            We carry the finest photography equipment from industry leaders
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-2 col-md-4 col-6">
+            <div
+              class="brand-card text-center p-4 bg-white rounded-3 shadow-sm h-100"
+            >
+              <img
+                src="./img/canon.jpg"
+                alt="Canon"
+                class="img-fluid mb-3"
+                style="max-height: 60px"
+              />
+              <h5>Canon</h5>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <div
+              class="brand-card text-center p-4 bg-white rounded-3 shadow-sm h-100"
+            >
+              <img
+                src="./nikon/D6.png"
+                alt="Nikon"
+                class="img-fluid mb-3"
+                style="max-height: 60px"
+              />
+              <h5>Nikon</h5>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <div
+              class="brand-card text-center p-4 bg-white rounded-3 shadow-sm h-100"
+            >
+              <img
+                src="./img/sony.png"
+                alt="Sony"
+                class="img-fluid mb-3"
+                style="max-height: 60px"
+              />
+              <h5>Sony</h5>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <div
+              class="brand-card text-center p-4 bg-white rounded-3 shadow-sm h-100"
+            >
+              <img
+                src="./sigma/Sigma FP L Digital Camera.webp"
+                alt="Sigma"
+                class="img-fluid mb-3"
+                style="max-height: 60px"
+              />
+              <h5>Sigma</h5>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <div
+              class="brand-card text-center p-4 bg-white rounded-3 shadow-sm h-100"
+            >
+              <img
+                src="./panasonic/GH7 Mirrorless Camera + 12-60mm F2.8-4.0 Lens.webp"
+                alt="Lumix"
+                class="img-fluid mb-3"
+                style="max-height: 60px"
+              />
+              <h5>Lumix</h5>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <div
+              class="brand-card text-center p-4 bg-white rounded-3 shadow-sm h-100"
+            >
+              <img
+                src="./img/LEICA.png"
+                alt="Leica"
+                class="img-fluid mb-3"
+                style="max-height: 60px"
+              />
+              <h5>Leica</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold">Our Products</h2>
+          <p class="lead">Professional photography equipment for every need</p>
+        </div>
+
+        <!-- Product Filter -->
+        <div class="row mb-4">
+          <div class="col-12">
+            <div class="d-flex justify-content-center flex-wrap gap-2">
+              <button
+                class="btn btn-outline-primary filter-btn active"
+                data-filter="all"
+              >
+                All Products
+              </button>
+              <button
+                class="btn btn-outline-primary filter-btn"
+                data-filter="canon"
+              >
+                Canon
+              </button>
+              <button
+                class="btn btn-outline-primary filter-btn"
+                data-filter="nikon"
+              >
+                Nikon
+              </button>
+              <button
+                class="btn btn-outline-primary filter-btn"
+                data-filter="sony"
+              >
+                Sony
+              </button>
+              <button
+                class="btn btn-outline-primary filter-btn"
+                data-filter="sigma"
+              >
+                Sigma
+              </button>
+              <button
+                class="btn btn-outline-primary filter-btn"
+                data-filter="lumix"
+              >
+                Lumix
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Canon Products -->
+        <div class="brand-section" data-brand="canon">
+          <h3 class="mb-4 text-center">Canon</h3>
+          <div class="row g-4" id="canonProducts">
+            <div class="col-lg-3 col-md-6">
+              <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                <div class="product-image">
+                  <img
+                    src="./canon/EOS R6 Mark II Body.webp"
+                    alt="Canon EOS R6 Mark II Body"
+                    class="img-fluid"
+                  />
+                  <div class="product-overlay">
+                    <button
+                      class="btn btn-primary btn-sm add-to-cart"
+                      data-name="Canon EOS R6 Mark II Body"
+                      data-price="1999.00"
+                      data-image="./canon/EOS R6 Mark II Body.webp"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <h5 class="product-title">Canon EOS R6 Mark II Body</h5>
+                  <p class="text-muted small">Professional mirrorless camera</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price fw-bold text-primary">$1,999.00</span>
+                    <span class="text-decoration-line-through text-muted"
+                      >$2,499.99</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                <div class="product-image">
+                  <img
+                    src="./canon/RF85mm F2 Macro IS STM.webp"
+                    alt="Canon RF85mm F2 Macro IS STM"
+                    class="img-fluid"
+                  />
+                  <div class="product-overlay">
+                    <button
+                      class="btn btn-primary btn-sm add-to-cart"
+                      data-name="Canon RF85mm F2 Macro IS STM"
+                      data-price="549.99"
+                      data-image="./canon/RF85mm F2 Macro IS STM.webp"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <h5 class="product-title">Canon RF85mm F2 Macro IS STM</h5>
+                  <p class="text-muted small">Professional macro lens</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price fw-bold text-primary">$549.99</span>
+                    <span class="text-decoration-line-through text-muted"
+                      >$599.99</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                <div class="product-image">
+                  <img
+                    src="./canon/VIXIA HF G70.webp"
+                    alt="Canon VIXIA HF G70"
+                    class="img-fluid"
+                  />
+                  <div class="product-overlay">
+                    <button
+                      class="btn btn-primary btn-sm add-to-cart"
+                      data-name="Canon VIXIA HF G70"
+                      data-price="1099.00"
+                      data-image="./canon/VIXIA HF G70.webp"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <h5 class="product-title">Canon VIXIA HF G70</h5>
+                  <p class="text-muted small">Professional camcorder</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price fw-bold text-primary">$1,099.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                <div class="product-image">
+                  <img
+                    src="./canon/CR-N100.webp"
+                    alt="Canon CR-N100"
+                    class="img-fluid"
+                  />
+                  <div class="product-overlay">
+                    <button
+                      class="btn btn-primary btn-sm add-to-cart"
+                      data-name="Canon CR-N100"
+                      data-price="1799.00"
+                      data-image="./canon/CR-N100.webp"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <h5 class="product-title">Canon CR-N100</h5>
+                  <p class="text-muted small">PTZ camera</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price fw-bold text-primary">$1,799.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nikon Products -->
+        <div class="brand-section mt-5" data-brand="nikon">
+          <h3 class="mb-4 text-center">Nikon</h3>
+          <div class="row g-4" id="nikonProducts">
+            <div class="col-lg-3 col-md-6">
+              <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                <div class="product-image">
+                  <img src="./nikon/D6.png" alt="Nikon D6" class="img-fluid" />
+                  <div class="product-overlay">
+                    <button
+                      class="btn btn-primary btn-sm add-to-cart"
+                      data-name="Nikon D6"
+                      data-price="6499.95"
+                      data-image="./nikon/D6.png"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <h5 class="product-title">Nikon D6</h5>
+                  <p class="text-muted small">Professional DSLR camera</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price fw-bold text-primary">$6,499.95</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                <div class="product-image">
+                  <img
+                    src="./nikon/Z 9.png"
+                    alt="Nikon Z 9"
+                    class="img-fluid"
+                  />
+                  <div class="product-overlay">
+                    <button
+                      class="btn btn-primary btn-sm add-to-cart"
+                      data-name="Nikon Z 9"
+                      data-price="4999.95"
+                      data-image="./nikon/Z 9.png"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <h5 class="product-title">Nikon Z 9</h5>
+                  <p class="text-muted small">Professional mirrorless camera</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price fw-bold text-primary">$4,999.95</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                <div class="product-image">
+                  <img
+                    src="./nikon/NIKKOR Z 28mm.png"
+                    alt="NIKKOR Z 28mm"
+                    class="img-fluid"
+                  />
+                  <div class="product-overlay">
+                    <button
+                      class="btn btn-primary btn-sm add-to-cart"
+                      data-name="NIKKOR Z 28mm"
+                      data-price="309.95"
+                      data-image="./nikon/NIKKOR Z 28mm.png"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <h5 class="product-title">NIKKOR Z 28mm</h5>
+                  <p class="text-muted small">Wide-angle lens</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price fw-bold text-primary">$309.95</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                <div class="product-image">
+                  <img
+                    src="./nikon/NIKKOR Z 35mm.jpg"
+                    alt="NIKKOR Z 35mm"
+                    class="img-fluid"
+                  />
+                  <div class="product-overlay">
+                    <button
+                      class="btn btn-primary btn-sm add-to-cart"
+                      data-name="NIKKOR Z 35mm"
+                      data-price="599.95"
+                      data-image="./nikon/NIKKOR Z 35mm.jpg"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <h5 class="product-title">NIKKOR Z 35mm</h5>
+                  <p class="text-muted small">Standard lens</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price fw-bold text-primary">$599.95</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sony Products -->
+        <div class="brand-section mt-5" data-brand="sony">
+          <h3 class="mb-4 text-center">Sony</h3>
+          <div class="row g-4" id="sonyProducts">
+            <div class="col-lg-3 col-md-6">
+              <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                <div class="product-image">
+                  <img
+                    src="./sony/Alpha 7R V Full-frame Mirrorless Interchangeable Lens Camera.webp"
+                    alt="Sony Alpha 7R V"
+                    class="img-fluid"
+                  />
+                  <div class="product-overlay">
+                    <button
+                      class="btn btn-primary btn-sm add-to-cart"
+                      data-name="Sony Alpha 7R V"
+                      data-price="3399.99"
+                      data-image="./sony/Alpha 7R V Full-frame Mirrorless Interchangeable Lens Camera.webp"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <h5 class="product-title">Sony Alpha 7R V</h5>
+                  <p class="text-muted small">Full-frame mirrorless camera</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price fw-bold text-primary">$3,399.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                <div class="product-image">
+                  <img
+                    src="./sony/Sony Alpha ZV-E10 - APS-C Interchangeable Lens Mirrorless Vlog Camera.webp"
+                    alt="Sony Alpha ZV-E10"
+                    class="img-fluid"
+                  />
+                  <div class="product-overlay">
+                    <button
+                      class="btn btn-primary btn-sm add-to-cart"
+                      data-name="Sony Alpha ZV-E10"
+                      data-price="1098.00"
+                      data-image="./sony/Sony Alpha ZV-E10 - APS-C Interchangeable Lens Mirrorless Vlog Camera.webp"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <h5 class="product-title">Sony Alpha ZV-E10</h5>
+                  <p class="text-muted small">Vlog camera</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price fw-bold text-primary">$1,098.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                <div class="product-image">
+                  <img
+                    src="./sony/Sony FE 24-70mm F2.8 GM II Lens Black.webp"
+                    alt="Sony FE 24-70mm F2.8 GM II"
+                    class="img-fluid"
+                  />
+                  <div class="product-overlay">
+                    <button
+                      class="btn btn-primary btn-sm add-to-cart"
+                      data-name="Sony FE 24-70mm F2.8 GM II"
+                      data-price="2298.00"
+                      data-image="./sony/Sony FE 24-70mm F2.8 GM II Lens Black.webp"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <h5 class="product-title">Sony FE 24-70mm F2.8 GM II</h5>
+                  <p class="text-muted small">Professional zoom lens</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price fw-bold text-primary">$2,298.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                <div class="product-image">
+                  <img
+                    src="./sony/Sony FE 70-200mm.webp"
+                    alt="Sony FE 70-200mm f/2.8 GM OSS"
+                    class="img-fluid"
+                  />
+                  <div class="product-overlay">
+                    <button
+                      class="btn btn-primary btn-sm add-to-cart"
+                      data-name="Sony FE 70-200mm f/2.8 GM OSS"
+                      data-price="1590.00"
+                      data-image="./sony/Sony FE 70-200mm.webp"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <h5 class="product-title">Sony FE 70-200mm f/2.8 GM OSS</h5>
+                  <p class="text-muted small">Telephoto zoom lens</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price fw-bold text-primary">$1,590.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sigma Products -->
+        <div class="brand-section mt-5" data-brand="sigma">
+          <h3 class="mb-4 text-center">Sigma</h3>
+          <div class="row g-4" id="sigmaProducts">
+            <div class="col-lg-3 col-md-6">
+              <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                <div class="product-image">
+                  <img
+                    src="./sigma/Sigma FP L Digital Camera.webp"
+                    alt="Sigma FP L Digital Camera"
+                    class="img-fluid"
+                  />
+                  <div class="product-overlay">
+                    <button
+                      class="btn btn-primary btn-sm add-to-cart"
+                      data-name="Sigma FP L Digital Camera"
+                      data-price="2499.00"
+                      data-image="./sigma/Sigma FP L Digital Camera.webp"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <h5 class="product-title">Sigma FP L Digital Camera</h5>
+                  <p class="text-muted small">Compact full-frame camera</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price fw-bold text-primary">$2,499.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                <div class="product-image">
+                  <img
+                    src="./sigma/Sigma 105mm F1.4 DG HSM Art for L Mount.webp"
+                    alt="Sigma 105mm F1.4 DG HSM Art"
+                    class="img-fluid"
+                  />
+                  <div class="product-overlay">
+                    <button
+                      class="btn btn-primary btn-sm add-to-cart"
+                      data-name="Sigma 105mm F1.4 DG HSM Art"
+                      data-price="1599.00"
+                      data-image="./sigma/Sigma 105mm F1.4 DG HSM Art for L Mount.webp"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <h5 class="product-title">Sigma 105mm F1.4 DG HSM Art</h5>
+                  <p class="text-muted small">Portrait lens</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price fw-bold text-primary">$1,599.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                <div class="product-image">
+                  <img
+                    src="./sigma/ELECTRONIC VIEWFINDER EVF-11.png"
+                    alt="Sigma Electronic Viewfinder EVF-11"
+                    class="img-fluid"
+                  />
+                  <div class="product-overlay">
+                    <button
+                      class="btn btn-primary btn-sm add-to-cart"
+                      data-name="Sigma Electronic Viewfinder EVF-11"
+                      data-price="259.00"
+                      data-image="./sigma/ELECTRONIC VIEWFINDER EVF-11.png"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <h5 class="product-title">
+                    Sigma Electronic Viewfinder EVF-11
+                  </h5>
+                  <p class="text-muted small">Electronic viewfinder</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price fw-bold text-primary">$259.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                <div class="product-image">
+                  <img
+                    src="./sigma/SIGMA ELECTRONIC FLASH EF-630.png"
+                    alt="Sigma Electronic Flash EF-630"
+                    class="img-fluid"
+                  />
+                  <div class="product-overlay">
+                    <button
+                      class="btn btn-primary btn-sm add-to-cart"
+                      data-name="Sigma Electronic Flash EF-630"
+                      data-price="269.99"
+                      data-image="./sigma/SIGMA ELECTRONIC FLASH EF-630.png"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <h5 class="product-title">Sigma Electronic Flash EF-630</h5>
+                  <p class="text-muted small">Camera flash</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price fw-bold text-primary">$269.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lumix Products -->
+        <div class="brand-section mt-5" data-brand="lumix">
+          <h3 class="mb-4 text-center">Lumix</h3>
+          <div class="row g-4" id="lumixProducts">
+            <div class="col-lg-3 col-md-6">
+              <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                <div class="product-image">
+                  <img
+                    src="./panasonic/GH7 Mirrorless Camera + 12-60mm F2.8-4.0 Lens.webp"
+                    alt="Lumix GH7 Mirrorless Camera"
+                    class="img-fluid"
+                  />
+                  <div class="product-overlay">
+                    <button
+                      class="btn btn-primary btn-sm add-to-cart"
+                      data-name="Lumix GH7 Mirrorless Camera + 12-60mm Lens"
+                      data-price="2799.99"
+                      data-image="./panasonic/GH7 Mirrorless Camera + 12-60mm F2.8-4.0 Lens.webp"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <h5 class="product-title">Lumix GH7 + 12-60mm Lens</h5>
+                  <p class="text-muted small">Mirrorless camera kit</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price fw-bold text-primary">$2,799.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                <div class="product-image">
+                  <img
+                    src="./panasonic/S Series 18-40mm F4.5-6.3 L-Mount Lens.webp"
+                    alt="Lumix S Series 18-40mm"
+                    class="img-fluid"
+                  />
+                  <div class="product-overlay">
+                    <button
+                      class="btn btn-primary btn-sm add-to-cart"
+                      data-name="Lumix S Series 18-40mm F4.5-6.3"
+                      data-price="499.99"
+                      data-image="./panasonic/S Series 18-40mm F4.5-6.3 L-Mount Lens.webp"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <h5 class="product-title">Lumix S Series 18-40mm F4.5-6.3</h5>
+                  <p class="text-muted small">L-Mount lens</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price fw-bold text-primary">$499.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                <div class="product-image">
+                  <img
+                    src="./panasonic/S Series 18mm F1.8 L-Mount Lens.webp"
+                    alt="Lumix S Series 18mm F1.8"
+                    class="img-fluid"
+                  />
+                  <div class="product-overlay">
+                    <button
+                      class="btn btn-primary btn-sm add-to-cart"
+                      data-name="Lumix S Series 18mm F1.8"
+                      data-price="999.99"
+                      data-image="./panasonic/S Series 18mm F1.8 L-Mount Lens.webp"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <h5 class="product-title">Lumix S Series 18mm F1.8</h5>
+                  <p class="text-muted small">L-Mount lens</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price fw-bold text-primary">$999.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                <div class="product-image">
+                  <img
+                    src="./panasonic/S Series PRO 70-200mm F2.8 L-Mount Lens.webp"
+                    alt="Lumix S Series PRO 70-200mm F2.8"
+                    class="img-fluid"
+                  />
+                  <div class="product-overlay">
+                    <button
+                      class="btn btn-primary btn-sm add-to-cart"
+                      data-name="Lumix S Series PRO 70-200mm F2.8"
+                      data-price="2299.99"
+                      data-image="./panasonic/S Series PRO 70-200mm F2.8 L-Mount Lens.webp"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <h5 class="product-title">
+                    Lumix S Series PRO 70-200mm F2.8
+                  </h5>
+                  <p class="text-muted small">Professional telephoto lens</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price fw-bold text-primary">$2,299.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold">Contact Us</h2>
+          <p class="lead">Get in touch with our photography experts</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <form id="contactForm" class="bg-white p-4 rounded-3 shadow-sm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="lastName" class="form-label">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subject"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary btn-lg w-100">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                src="./img/logo.png"
+                alt="Camera Shop Logo"
+                height="40"
+                class="me-2"
+              />
+              <span class="fw-bold fs-4">ENG SREYNICH</span>
+            </div>
+            <p class="text-muted">
+              Your trusted partner for professional photography equipment.
+              Quality products, expert service, competitive prices.
+            </p>
+            <div class="d-flex gap-3">
+              <a href="#" class="text-white"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#home" class="text-muted text-decoration-none">Home</a>
+              </li>
+              <li>
+                <a href="#products" class="text-muted text-decoration-none"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a href="#brands" class="text-muted text-decoration-none"
+                  >Brands</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="text-muted text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5>Categories</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-muted text-decoration-none">Cameras</a>
+              </li>
+              <li>
+                <a href="#" class="text-muted text-decoration-none">Lenses</a>
+              </li>
+              <li>
+                <a href="#" class="text-muted text-decoration-none"
+                  >Accessories</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-muted text-decoration-none">Lighting</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5>Contact Info</h5>
+            <ul class="list-unstyled text-muted">
+              <li><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</li>
+              <li><i class="fas fa-envelope me-2"></i> info@camerashop.com</li>
+              <li>
+                <i class="fas fa-map-marker-alt me-2"></i> 123 Photography St,
+                Camera City
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="text-center">
+          <p class="mb-0">
+            &copy; <span id="displayYear"></span> ENG SREYNICH Camera Shop.
+            Built with <i class="fas fa-heart text-danger"></i> for photography
+            enthusiasts.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Shopping Cart</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="cartItems"></div>
+            <div
+              class="d-flex justify-content-between align-items-center mt-3 pt-3 border-top"
+            >
+              <h5>Total: $<span id="cartTotal">0.00</span></h5>
+              <button class="btn btn-primary" id="checkoutBtn">
+                Proceed to Checkout
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Structured Data -->
+    <script src="./js/structured-data.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
