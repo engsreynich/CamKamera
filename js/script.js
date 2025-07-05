@@ -1,4 +1,3 @@
-// Camera Shop Website JavaScript
 
 // Global variables
 let cart = [];
